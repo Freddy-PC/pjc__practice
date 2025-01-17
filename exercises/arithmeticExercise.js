@@ -16,10 +16,10 @@ let subtration = num2 - num1;
 let multiplication = num1 * num2;
 let division = num2 / num1;
 
-console.log(addition);
-console.log(subtration);
-console.log(multiplication);
-console.log(division);
+// console.log(addition);
+// console.log(subtration);
+// console.log(multiplication);
+// console.log(division);
 
 /*
 Create a variable greeting and assign it the value "Hello, ".
@@ -42,10 +42,10 @@ Multiply num1 and "5". Log the result
 //write your code below this line
 
 let result1 = num1 + concatenate;
-console.log(result1);
+// console.log(result1);
 
 let result2 = num1 + "5";
-console.log(result2);
+// console.log(result2);
 
 let result3 = num1 * "5";
-console.log(result3);
+// console.log(result3);
