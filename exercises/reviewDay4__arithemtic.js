@@ -49,11 +49,3 @@ let absent = undefined;
 
 //When wouild you use a Object
 /// Change, edit, or delete data > Put it into an object!
-
-let x = 5;
-console.log(++x);
-console.log(x++);
-
-console.log(x);
-console.log(++x);
-console.log(x++);
