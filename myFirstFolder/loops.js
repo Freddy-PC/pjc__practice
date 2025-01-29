@@ -38,5 +38,5 @@ let newSum = 0;
 
 do {
   input = parseInt(prompt("Enter a number"), 0);
-  alert(`You enetered ${input}...and the sum is ${(sum += input)}`);
+  alert(`You entered ${input}...and the sum is ${(sum += input)}`);
 } while (input > 0);
