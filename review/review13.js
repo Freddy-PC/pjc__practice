@@ -73,19 +73,31 @@ console.log(addition(5, 1));
 //Use for...in to iterate over the object keys (names).
 // Inside that loop, use for...of to print each person’s favorite foods.
 
-let people = {
-  bob: ["hamburger", "fries"],
-  maria: ["enchiladas", "tacos"],
-  frank: ["spagetti", "fettechini"],
-  liz: ["ramen", "sushi"],
-};
+// let people = {
+//   bob: ["hamburger", "fries"],
+//   maria: ["enchiladas", "tacos"],
+//   frank: ["spagetti", "fettechini"],
+//   liz: ["ramen", "sushi"],
+// };
 
-// Nested loop..........
-for (let key in people) {
-  // people === keys > bob
-  console.log("\n" + key); //
-  for (let munch of people[key]) {
-    // people[eat] === values > hamburger, fries
-    console.log(munch);
+// // Nested loop..........
+// for (let key in people) {
+//   // people === keys > bob
+//   console.log("\n" + key); //
+//   for (let munch of people[key]) {
+//     // people[eat] === values > hamburger, fries
+//     console.log(munch);
+//   }
+// }
+
+// Example from above
+try {
+  for (let key in people) {
+    console.log("\n" + key); //
+    for (let munch of people[key]) {
+      console.log(munch);
+    }
   }
+} catch (error) {
+  console.log("You have an error: " + error);
 }
