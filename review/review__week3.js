@@ -5,6 +5,14 @@ FOCUS: VARIABLES, CONDITIOONALS, LOOPS, FUNCTIONS, ARRAYS, AND OBJECTS
 Declare a let variable called greeting and assign the value "Good Morning".
 Create a const variable named hour with a value of 9.
 Reassign greeting to "Good Afternoon" if the hour is greater than or equal to 12.*/
+let greeting = "Good Morning";
+const hour = 20;
+console.log(`Before the if statment: ${greeting}`);
+
+if (hour > 12) {
+  greeting = "Good Afternoon";
+}
+console.log(`After the if statment: ${greeting}`);
 
 /* 2
 Write a program that checks a number stored in the variable temperature.
@@ -12,19 +20,56 @@ Write a program that checks a number stored in the variable temperature.
 -If it’s between 0 and 30, print "It's cold.".
 -If it’s above 30, print "It's warm."*/
 
+// Celcius...
+let temp = 35;
+if (temp < 0) {
+  console.log("It's freezing");
+} else if (temp >= 0 && temp <= 30) {
+  console.log("It's cold");
+} else if (temp > 30) {
+  console.log("It's warm");
+}
+
 /* 3
 Create a for loop that prints the numbers 1 to 10.
 Add a while loop that sums numbers from 1 to 5 and prints the result.*/
+// for (let i = 1; i > 0 && i <= 10; i++) {
+//   console.log(`Print numbers: ${i}`);
+// }
+
+// Shorter syntax!
+// No need to make a variable outide the for loop. It can be declared at the initialization!
+for (let i = 1; i <= 10; i++) {
+  console.log(`Print numbers 1-10: ${i}`);
+}
 
 /* 4
 Write a function named multiply that takes two parameters and returns their product.
 Call the function with values 4 and 5 and print the result.
 Try changing the inputs to negative numbers.*/
+function multiply(x, y) {
+  return x * y;
+}
+console.log(`Call function +product: ${multiply(4, 5)}`);
+console.log(`Call function -product: ${multiply(-4, 5)}`);
 
 /* 5
 Create an array of numbers: [3, 6, 9, 12].
 Use a loop to print each number multiplied by 2.
 Create an object named car with properties make, model, and year. Print the object.*/
+let array = [3, 6, 9, 12];
+for (i = 0; i < array.length; i++) {
+  console.log(`Print each number multiplied by 2: ${array[i] * 2}`);
+}
+// i is the label for iteration throught the array
+// array[i] = access the value from each index of the array
+
+const obj = {
+  make: "Subaru",
+  model: "Crosstrek",
+  year: 2023,
+};
+console.log(obj);
 
 /* 6
 Declare a let variable isLoggedIn and set it to false.
